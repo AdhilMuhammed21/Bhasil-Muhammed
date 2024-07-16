@@ -213,3 +213,8 @@ nav .material-symbols-outlined{
         margin-top: 200%;
     }
 }
+@media only screen and (max-width: 667px){
+    .header-text{
+        margin-top: 160%;
+    }
+}
