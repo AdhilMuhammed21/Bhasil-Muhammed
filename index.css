@@ -9,18 +9,29 @@ html{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     background: #faf9ec;
 }
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(Desktop\ Background.png);
-    background-size: cover;
-    background-position: centre;
+    height: fit-content;
 
 }
 .container{
     padding: 30px 8%;
+}
+.main{
+    display: flex;
+}
+img{
+    mix-blend-mode: multiply;
+}
+.Desk{
+    display: block;
+}
+.Mob{
+    display: none;
 }
 nav{
     display: flex ;
@@ -61,18 +72,20 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 25%;
     font-size: 30px;
-    margin-left:50%;
+    margin-left:5%;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
 }
 
  /* About */
 
+ #about{
+    margin-top: 2%;
+ }
  .abt1{
     font-size: 30px;
-    margin-top: 12%;
     text-decoration: underline;
     text-decoration-color: #a45933;
  }
@@ -80,7 +93,6 @@ nav ul li a:hover::after{
  .abt2{
     font-size: 25px;
     margin-top: 15px;
-    margin-bottom: 12%;
 
  }
  #work{
@@ -135,13 +147,27 @@ nav .material-symbols-outlined{
 
 /* ---------css for small screen-------------- */
 @media only screen and (max-width:420px){
-    #header{
-        background-image: url(Phone\ Background.png);
+
+    .main{
+        display: flex;
+        flex-direction: column;
     }
-    
+    img{
+        width:300px;
+        height: 500px;
+        mix-blend-mode: multiply;
+
+    }
+    .Desk{
+        display: none;
+    }
+    .Mob{
+        display: block;
+        
+    }
     .header-text{
         
-        margin-top: 160%;
+        margin-top: 0%;
         font-size: 13px;
         margin-left: 10px;
 
@@ -201,4 +227,3 @@ nav .material-symbols-outlined{
         color: black;
       }
 }
-
